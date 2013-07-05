@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- 
 /**
  * $license_text$
@@ -8,8 +9,7 @@
  * @version   $Id$
  */
 -->
-<?xml version="1.0" encoding="UTF-8"?>
-<<config>
+<config>
     <modules>
         <Etailer_SecureCookie>
             <version>1.0.0</version>
