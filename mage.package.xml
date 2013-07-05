@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+    <name>Etailer_SecureCookie</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.luka.de/licenses/pending.txt">LUKA Pending License</license>
+    <channel>community</channel>
+  
+    <summary>This Module allows to secure the frontend cookie on https only stores.</summary>
+    <description><![CDATA[This module allows to secure the frontend cookie for stores that will run the entire site on https.
+This module is sponsored by www.offtheback.co.nz
+
+You can find the source code on github: https://github.com/lukanetconsult/mage-secure-cookie
+Report Issues on github: https://github.com/lukanetconsult/mage-secure-cookie/issues]]></description>
+  
+    <authors>
+        <author>
+            <name>Axel Helmert</name>
+            <email>ah@luka.de</email>
+        </author>
+    </authors>
+</package>

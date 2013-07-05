@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.7.1" version="2.0"
+    xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0
+    http://pear.php.net/dtd/tasks-1.0.xsd
+    http://pear.php.net/dtd/package-2.0
+    http://pear.php.net/dtd/package-2.0.xsd">
+    <name>Etailer_SecureCookie</name>
+    <channel>connect.magentocommerce.com/community</channel>
+    <summary>This Module allows to secure the frontend cookie on https only stores.</summary>
+    <description>This module allows to secure the frontend cookie for stores that will run the entire site on https.
+This module is sponsored by www.offtheback.co.nz</description>
+    <lead>
+        <name>Axel Helmert</name>
+        <user>AxelH</user>
+        <email>ah@luka.de</email>
+        <active>yes</active>
+    </lead>
+    <date>2013-07-05</date>
+    <time>08:31:57</time>
+    <version>
+        <release>1.0.0</release>
+        <api>1.0.0</api>
+    </version>
+    <stability>
+        <release>stable</release>
+        <api>stable</api>
+    </stability>
+    <license uri="http://www.luka.de/licenses/pending.txt">LUKA Pending License</license>
+    <notes>See https://github.com/lukanetconsult/mage-secure-cookie/blob/master/CHANGELOG.md</notes>
+    <contents></contents>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.2</min>
+                <max>5.99999</max>
+            </php>
+            <pearinstaller>
+                <min>1.6.2</min>
+            </pearinstaller>
+        </required>
+    </dependencies>
+    <phprelease />
+</package>

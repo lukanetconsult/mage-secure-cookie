@@ -1,0 +1,47 @@
+<!-- 
+/**
+ * $license_text$
+ *
+ * @author    Axel Helmert <ah@luka.de>
+ * @copyright Copyright (c) 2012 LUKA netconsult GmbH (www.luka.de)
+ * @license   $license$
+ * @version   $Id$
+ */
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<<config>
+    <modules>
+        <Etailer_SecureCookie>
+            <version>1.0.0</version>
+            <description>This module allows to secure the frontend cookie when running the whole store on https</description>
+        </Etailer_SecureCookie>
+    </modules>
+    
+    <global>
+        <models>
+            <core>
+                <rewrite>
+                    <cookie>Etailer_SecureCookie_Model_Cookie</cookie>
+                </rewrite>
+            </core>
+        </models>
+        
+        <helpers>
+            <etailersecurecookie>
+                <class>Etailer_SecureCookie_Helper</class>
+            </etailersecurecookie>
+        </helpers>
+    </global>
+    
+    <adminhtml>
+        <translate>
+            <modules>
+                <Etailer_SecureCookie>
+                    <files>
+                        <default>Etailer_SecureCookie.csv</default>
+                    </files>
+                </Etailer_SecureCookie>
+            </modules>
+        </translate>
+    </adminhtml>
+</config>

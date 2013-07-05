@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LUKA Secure Frontend Cookie Magento Module" default="build">
+    <!--
+    This is a phing build script and requires the following custom tasks:
+
+      * definebasedir
+      * magepackage
+      * magepearpackage
+
+    -->
+    
+    <definebasedir />
+    <property file="build.properties" />
+    <property environment="env" />
+    <property name="build.dir" value="../build" />
+    <property name="build.package.id" value=".${env.BUILD_NUMBER}" />
+    <property name="build.package.version" value="1.0.0" />
+    <property name="build.package.name" value="Etailer_SecureCookie-connect2-${build.package.version}.tgz" />
+    <property name="build.package.pearname" value="Etailer_SecureCookie-${build.package.version}.tgz" />
+
+    <target name="clean">
+        <delete dir="${build.dir}" />
+    </target>
+    
+    <target name="build" depends="clean">
+        <mkdir dir="${build.dir}" />
+        
+        <magepearpackage packagexml="${basedir}/pear.package.xml" packagefile="${build.dir}/${build.package.pearname}" changelog="${basedir}/CHANGELOG.md">
+            <fileset dir="${basedir}">
+                <include name="app/**" />
+            </fileset>
+        </magepearpackage>
+        
+        <magepackage packagexml="${basedir}/mage.package.xml" packagefile="${build.dir}/${build.package.name}" changelog="${basedir}/CHANGELOG.md">
+            <fileset dir="${basedir}">
+                <include name="app/**" />
+            </fileset>
+        </magepackage>
+    </target>
+</project>

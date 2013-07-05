@@ -1,0 +1,19 @@
+<!-- 
+/**
+ * $license_text$
+ *
+ * @author    Axel Helmert <ah@luka.de>
+ * @copyright Copyright (c) 2012 LUKA netconsult GmbH (www.luka.de)
+ * @license   $license$
+ * @version   $Id$
+ */
+-->
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Etailer_SecureCookie>
+            <codePool>community</codePool>
+            <active>true</active>
+        </Etailer_SecureCookie>
+    </modules>
+</config>
