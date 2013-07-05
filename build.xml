@@ -12,7 +12,7 @@
     <definebasedir />
     <property file="build.properties" />
     <property environment="env" />
-    <property name="build.dir" value="../build" />
+    <property name="build.dir" value="../build/mage-securecookie" />
     <property name="build.package.id" value=".${env.BUILD_NUMBER}" />
     <property name="build.package.version" value="1.0.0" />
     <property name="build.package.name" value="Etailer_SecureCookie-connect2-${build.package.version}.tgz" />
