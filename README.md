@@ -1,7 +1,7 @@
 # Secure Cookie Magento Module
 
 This module allows to secure the frontend cookie for stores that will run the entire site on https.
-This module is sponsored by (www.offtheback.co.nz)[http://www.offtheback.co.nz/]
+This module is sponsored by [offtheback.co.nz](http://www.offtheback.co.nz/)
 
 # Support
 
