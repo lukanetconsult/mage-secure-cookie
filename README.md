@@ -1,29 +1,40 @@
 # Secure Cookie Magento Module
 
 This module allows to secure the frontend cookie for stores that will run the entire site on https.
-This module is sponsored by [offtheback.co.nz](http://www.offtheback.co.nz/)
+This module is sponsored by [offtheback.co.nz](http://www.offtheback.co.nz/).
 
-# Support
+## Support
 
 If you've found a bug, please open an [issue](https://github.com/lukanetconsult/mage-secure-cookie/issues) at the project page on github.
 
 For paid support in installation, resolving conflicts or professional Magento hosting, please contact us via e-mail at info@luka.de.
 
-# Installation
+## License
+
+This Magento extension is free software and released under the terms of the GNU Lesser General Public License version 3.  
+The full license can be viewed in [LICENSE.md](LICENSE.md) and [LICENSE.lesser.md](LICENSE.lesser.md).
+
+You may also view the license texts at www.gnu.org
+
+* http://www.gnu.org/licenses/gpl-3.0.txt
+* http://www.gnu.org/licenses/lgpl-3.0.txt
+ 
+
+## Installation
 
 TBD: This module will be published to magento connect when completed.
 
-## Configuration
+### Configuration
 
 After installing this module, you'll have an additional option to turn on secure cookies under System > Configuration > Web > Session Cookie Management in the Magento admin panel.
-Please not that this setting will mark the frontend cookie "Secure", only when the following conditions are met:
+Please note that this setting will mark the frontend cookie "Secure", only when the following conditions are met:
 
 * The unsecure base link url starts with "https://"
 * The system config Web > Secure > Use Secure URLs in Frontend is set to "yes" 
 
-# Possible Compatibility Issues
+## Possible Compatibility Issues
 
-## Core Rewrites
+### Core Rewrites
 
 This module uses Magento's rewrite feature to extend the cookie model. There is no other option to implement this feature. 
 The following classes are rewritten:
