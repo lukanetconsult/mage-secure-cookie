@@ -26,4 +26,50 @@
  */
 class Etailer_SecureCookie_Helper_Data extends Mage_Core_Helper_Abstract
 {
+    /**
+     * XML path to cookie config "secure"
+     */
+    const XML_PATH_COOKIE_SECURE = 'web/cookie/cookie_secure';
+
+    /**
+     * Store object
+     *
+     * @var Mage_Core_Model_Store|null
+     */
+    protected $_store;
+
+    /**
+     * Check for a secure frontend
+     *
+     * This only applies if
+     *
+     * 1. The secure cookie Option is turned on in the store config.
+     * 2. "Use secure urls in Frontend" is turned on in the store config
+     * 3. The unsecure base URL is a https:// url
+     *
+     * @return boolean
+     */
+    public function checkSecureFrontend()
+    {
+        $store = $this->getStore();
+        if (!$store->getConfig(self::XML_PATH_COOKIE_SECURE) || !$store->getConfig(Mage_Core_Model_Store::XML_PATH_SECURE_IN_FRONTEND)) {
+            return false;
+        }
+
+        $baseLinkUrl = $store->getConfig(Mage_Core_Model_Store::XML_PATH_UNSECURE_BASE_LINK_URL);
+        return (substr($baseLinkUrl, 0, 8) == 'https://');
+    }
+
+    /**
+     * Retrieve Store object
+     *
+     * @return Mage_Core_Model_Store
+     */
+    public function getStore()
+    {
+        if (is_null($this->_store)) {
+            $this->_store = Mage::app()->getStore();
+        }
+        return $this->_store;
+    }
 }
