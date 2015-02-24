@@ -25,7 +25,7 @@
 <config>
     <modules>
         <Etailer_SecureCookie>
-            <version>1.0.0</version>
+            <version>1.1.0</version>
             <description>This module allows to secure the frontend cookie when running the whole store on https</description>
         </Etailer_SecureCookie>
     </modules>
@@ -37,6 +37,11 @@
                     <cookie>Etailer_SecureCookie_Model_Cookie</cookie>
                 </rewrite>
             </core>
+            <enterprise_pagecache>
+                <rewrite>
+                    <cookie>Etailer_SecureCookie_Model_Enterprise_Cookie</cookie>
+                </rewrite>
+            </enterprise_pagecache>
         </models>
         
         <helpers>
